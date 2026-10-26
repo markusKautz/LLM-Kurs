@@ -1,0 +1,19 @@
+{
+  "name": "llm-kurs-vortraege",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "vortrag1": "slidev vortrag1.md --open",
+    "vortrag1-netz": "slidev vortrag1.md --remote",
+    "vortrag2": "slidev vortrag2.md --open",
+    "vortrag2-netz": "slidev vortrag2.md --remote",
+    "export1": "slidev export vortrag1.md --output export/vortrag1.pdf"
+  },
+  "dependencies": {
+    "@slidev/cli": "53.0.0",
+    "@slidev/theme-default": "0.25.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.64.1"
+  }
+}

@@ -1,0 +1,24 @@
+# Vorläufer-Projekt, nicht Teil des Kurses
+/PyLanguageModels/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Manim-Zwischendateien (fertige Videos liegen in vortraege/public/videos)
+kurs/trainer/vortraege/animationen/media/
+
+# Pakete aus "erzeuge_notebooks.py --paket" und entpackte Kopien
+kurs/trainer/*.zip
+kurs/trainer/LLM-Kurs-Notebook1/
+
+# Editoren und System
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+{
+  "name": "LLM-Kurs",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "remoteUser": "lehrling",
+  "workspaceFolder": "/kurs",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/kurs,type=bind",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.notebookFileRoot": "${fileDirname}",
+        "workbench.startupEditor": "none"
+      }
+    }
+  }
+}

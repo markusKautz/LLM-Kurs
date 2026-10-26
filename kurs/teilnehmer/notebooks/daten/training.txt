@@ -1,0 +1,67 @@
+der morgen beginnt ruhig. die sonne scheint durch das fenster. auf dem tisch steht eine tasse kaffee. daneben liegt ein buch. im haus ist es still. draußen fahren die ersten autos durch die straße. ein hund läuft mit seinem besitzer über den gehweg. in einem garten sitzen zwei vögel auf einem baum. die luft ist kühl und klar.
+
+anna steht früh auf. sie öffnet das fenster und schaut nach draußen. danach geht sie in die küche. sie macht sich einen kaffee und schneidet ein stück brot ab. auf das brot legt sie käse. sie setzt sich an den tisch und beginnt zu frühstücken. währenddessen liest sie einige nachrichten. nach dem frühstück räumt sie den tisch ab. dann zieht sie ihre jacke an und verlässt das haus.
+
+vor dem haus befindet sich eine bushaltestelle. mehrere menschen warten dort. einige schauen auf ihr telefon. andere unterhalten sich miteinander. nach wenigen minuten kommt der bus. die türen öffnen sich. die menschen steigen ein. anna findet einen freien platz am fenster. der bus fährt langsam durch die stadt. an jeder haltestelle steigen neue menschen ein und andere aus.
+
+max arbeitet in einem kleinen büro. auf seinem schreibtisch steht ein computer. neben dem computer liegen ein notizbuch und ein stift. max startet sein programm. zuerst öffnet er seinen editor. dann liest er den code vom vortag. einige stellen möchte er verbessern. er ändert eine funktion und startet das programm. auf dem bildschirm erscheint eine fehlermeldung.
+
+max liest die fehlermeldung genau. danach sucht er nach der stelle im code. er prüft die verwendeten variablen. nach einigen minuten findet er einen falschen wert. er korrigiert die variable und startet das programm erneut. diesmal funktioniert der erste teil. anschließend entdeckt er einen weiteren fehler. auch diesen untersucht er schritt für schritt.
+
+programmieren bedeutet oft, ein großes problem in kleinere probleme zu zerlegen. zuerst wird geprüft, was bereits funktioniert. danach wird untersucht, wo ein fehler entsteht. jede vermutung kann getestet werden. wenn ein test fehlschlägt, liefert auch das neue informationen. auf diese weise nähert man sich einer lösung.
+
+python ist eine programmiersprache. viele menschen verwenden python, weil die syntax vergleichsweise einfach ist. eine variable speichert einen wert. eine liste kann mehrere werte speichern. ein dictionary verbindet schlüssel mit werten. eine funktion fasst mehrere anweisungen zusammen. eine klasse beschreibt, wie objekte aufgebaut sind.
+
+ein objekt kann daten und funktionen enthalten. funktionen innerhalb einer klasse werden methoden genannt. der konstruktor einer klasse wird aufgerufen, wenn ein neues objekt erzeugt wird. in python heißt dieser konstruktor init. mit self kann innerhalb einer methode auf das aktuelle objekt zugegriffen werden.
+
+ein einfaches sprachmodell verarbeitet text. der computer versteht buchstaben nicht so wie ein mensch. deshalb werden buchstaben oder andere symbole zunächst in zahlen umgewandelt. aus diesen zahlen kann das modell berechnungen durchführen. das ziel besteht häufig darin, das nächste zeichen oder das nächste token vorherzusagen.
+
+ein sehr einfaches sprachmodell kann nur zählen, welche zeichen häufig aufeinander folgen. wenn nach einem a oft ein l folgt, kann das modell dem l eine hohe wahrscheinlichkeit geben. wenn nach einem a manchmal auch ein u folgt, bekommt auch das u eine gewisse wahrscheinlichkeit. auf diese weise entsteht eine verteilung möglicher nächster zeichen.
+
+ein neuronales sprachmodell arbeitet anders. es verwendet gewichtete verbindungen zwischen vielen zahlen. diese gewichte bestimmen, wie stark verschiedene informationen berücksichtigt werden. am anfang sind die gewichte zufällig. das modell kann deshalb noch keine guten vorhersagen machen.
+
+beim training erhält das modell ein beispiel. es bekommt einen kontext und versucht, das nächste zeichen vorherzusagen. danach wird die vorhersage mit der richtigen antwort verglichen. aus dem unterschied wird ein fehlerwert berechnet. dieser fehlerwert wird loss genannt.
+
+ein kleiner loss bedeutet, dass das modell der richtigen antwort bereits eine hohe wahrscheinlichkeit gegeben hat. ein großer loss bedeutet, dass das modell bei der richtigen antwort sehr unsicher war. das training versucht deshalb, den loss schritt für schritt zu verkleinern.
+
+die gewichte des modells werden während des trainings verändert. dafür wird berechnet, welche gewichte den fehler beeinflusst haben. diese information wird rückwärts durch das netz weitergegeben. dieser vorgang wird backpropagation genannt. danach werden die gewichte ein kleines stück verändert.
+
+die learning rate bestimmt, wie groß ein solcher lernschritt ist. eine sehr große learning rate kann dazu führen, dass das modell ständig über eine gute lösung hinausschießt. eine sehr kleine learning rate kann dazu führen, dass das training sehr lange dauert. deshalb muss ein sinnvoller wert gewählt werden.
+
+softmax wandelt mehrere ausgabewerte in wahrscheinlichkeiten um. alle wahrscheinlichkeiten zusammen ergeben eins. eine hohe wahrscheinlichkeit bedeutet, dass das modell ein bestimmtes zeichen für plausibel hält. eine niedrige wahrscheinlichkeit bedeutet, dass das zeichen weniger wahrscheinlich ist.
+
+bei der textgenerierung wird immer wieder dasselbe prinzip verwendet. zuerst betrachtet das modell den aktuellen kontext. dann berechnet es die wahrscheinlichkeiten für das nächste zeichen. danach wird ein zeichen ausgewählt. dieses zeichen wird an den bisherigen text angehängt. dann beginnt die Berechnung erneut.
+
+temperature beeinflusst, wie zufällig die auswahl ist. bei einer niedrigen temperature werden sehr wahrscheinliche zeichen stärker bevorzugt. der text wird dadurch oft ruhiger und vorhersehbarer. bei einer hohen temperature bekommen auch seltene zeichen eine größere chance. der text kann dadurch abwechslungsreicher, aber auch chaotischer werden.
+
+one hot encoding ist eine einfache möglichkeit, zeichen als zahlen darzustellen. jedes zeichen bekommt dabei eine eigene position in einem vektor. genau eine stelle enthält eine eins. alle anderen stellen enthalten nullen. diese darstellung ist einfach, aber sie enthält keine gelernte information über die bedeutung eines zeichens.
+
+embeddings sind eine flexiblere darstellung. jedes zeichen oder token bekommt einen kleinen vektor aus mehreren zahlen. diese zahlen werden beim training gelernt. dadurch kann das modell interne eigenschaften der zeichen darstellen. embeddings werden deshalb in vielen modernen sprachmodellen verwendet.
+
+attention hilft einem modell dabei, verschiedene teile des kontexts unterschiedlich stark zu berücksichtigen. nicht jedes vorherige zeichen ist für jede neue vorhersage gleich wichtig. attention berechnet deshalb gewichte für die informationen im kontext. wichtige informationen erhalten dabei mehr einfluss.
+
+self attention bedeutet, dass die elemente einer sequenz miteinander verglichen werden. dafür werden query, key und value verwendet. eine query kann vereinfacht als frage verstanden werden. ein key beschreibt, welche information eine position anbietet. der value enthält die information, die weitergegeben werden soll.
+
+wenn eine query gut zu einem key passt, erhält der zugehörige value mehr gewicht. dadurch kann das modell informationen aus verschiedenen positionen im kontext kombinieren. mehrere attention heads können unterschiedliche arten von zusammenhängen gleichzeitig betrachten.
+
+ein transformer kombiniert embeddings, positionsinformationen, attention und feed forward netze. residual connections helfen dabei, informationen durch mehrere schichten zu transportieren. layer normalization stabilisiert die berechnungen. mehrere transformer blöcke können hintereinander ausgeführt werden.
+
+ein kleiner transformer ist noch kein großes sprachmodell. große sprachmodelle besitzen sehr viele parameter und werden mit sehr großen datenmengen trainiert. trotzdem bleibt das grundprinzip ähnlich. text wird in zahlen umgewandelt. diese zahlen werden durch viele schichten verarbeitet. am ende entstehen wahrscheinlichkeiten für mögliche nächste tokens.
+
+lernen braucht daten. ein modell kann nur aus den beispielen lernen, die es während des trainings sieht. wenn der trainingsdatensatz sehr klein ist, kann das modell einzelne stellen einfach auswendig lernen. das bedeutet aber nicht automatisch, dass es neue texte gut erzeugen kann.
+
+mehr daten können helfen, allgemeinere muster zu lernen. die qualität der daten ist dabei wichtig. ein sauberer und konsistenter text ist für ein kleines lernmodell oft hilfreicher als viele schlecht formatierte oder widersprüchliche texte.
+
+ein modell sollte nicht nur anhand des training loss beurteilt werden. wenn der training loss sehr klein wird, kann das modell die trainingsdaten einfach auswendig gelernt haben. deshalb verwendet man oft zusätzliche daten zur überprüfung. diese daten nennt man validation daten.
+
+wenn der training loss sinkt und auch der validation loss sinkt, verbessert sich das modell wahrscheinlich tatsächlich. wenn der training loss weiter sinkt, während der validation loss steigt, spricht man von overfitting. das modell passt sich dann zu stark an die bekannten trainingsdaten an.
+
+batch training bedeutet, dass mehrere trainingsbeispiele gemeinsam verarbeitet werden. anstatt nach jedem einzelnen beispiel sofort die gewichte zu verändern, werden mehrere beispiele gesammelt. aus diesen beispielen wird ein gemeinsamer loss berechnet. danach werden die gewichte einmal angepasst.
+
+eine batch size von zweiunddreißig bedeutet, dass zweiunddreißig beispiele gemeinsam zu einem trainingsschritt gehören. dadurch kann das training stabiler und auf moderner hardware effizienter werden. die batch size verändert jedoch nicht das grundprinzip des lernens.
+
+ein optimizer entscheidet, wie die berechneten gradienten verwendet werden, um die gewichte anzupassen. adam und adamw sind häufig verwendete optimizer. sie passen die schrittweite für verschiedene parameter automatisch an und können das training dadurch stabiler machen.
+
+weight decay kann dabei helfen, sehr große gewichte zu vermeiden. dadurch kann das modell manchmal besser verallgemeinern. auch hier gilt, dass ein zu großer wert das lernen behindern kann. viele parameter eines neuronalen netzes müssen deshalb sinnvoll aufeinander abgestimmt werden.
+
+am ende bleibt das zentrale prinzip einfach. ein sprachmodell bekommt einen kontext. es berechnet daraus zahlen. diese zahlen werden durch gewichtete schichten verarbeitet. das modell erzeugt eine vorhersage. beim training wird der fehler gemessen. danach werden die gewichte verändert. durch sehr viele wiederholungen kann das modell sprachliche muster lernen.

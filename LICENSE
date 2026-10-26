@@ -1,0 +1,14 @@
+Dieses Repository steht unter zwei Lizenzen:
+
+- Programmcode (alle .py-, .ts-, .vue-, .css-, .sh- und .bat-Dateien, Dockerfile
+  sowie Code-Zellen in den Notebooks): MIT-Lizenz, siehe LICENSE-CODE
+- Kursinhalte (Texte und Erklärungen in Notebooks und Vorträgen, Grafiken,
+  Videos): Creative Commons Namensnennung 4.0 International (CC BY 4.0),
+  siehe LICENSE-INHALT
+
+Ausgenommen sind:
+
+- Schriften Inter und JetBrains Mono: SIL Open Font License 1.1,
+  siehe OFL-*.txt in den jeweiligen Ordnern "schriften"
+- Märchentexte in kurs/teilnehmer/notebooks/daten/maerchen.txt:
+  Kinder- und Hausmärchen der Brüder Grimm, gemeinfrei

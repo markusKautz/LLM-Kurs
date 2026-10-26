@@ -1,0 +1,187 @@
+/* Gemeinsames Aussehen aller Vorträge */
+
+@font-face {
+  font-family: "Inter";
+  src: url("/schriften/Inter.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/schriften/JetBrainsMono.ttf") format("truetype");
+  font-weight: 100 800;
+  font-display: block;
+}
+
+:root {
+  --hintergrund: #fbfaf7;
+  --flaeche: #ffffff;
+  --flaeche-hell: #f1efea;
+  --linie: #e1ded6;
+  --text: #16181d;
+  --text-leise: #575d6b;
+  --text-sehr-leise: #9a9fab;
+  --blau: #2a78d6;
+  --blau-tief: #1d5fb3;
+  --orange: #eb6834;
+  --orange-tief: #d4521f;
+  --orange-hauch: rgba(235, 104, 52, 0.12);
+  --leuchten-orange: 0 0 0 4px rgba(235, 104, 52, 0.16), 0 4px 14px rgba(235, 104, 52, 0.25);
+  --leuchten-blau: 0 0 0 4px rgba(42, 120, 214, 0.14);
+  --schatten: 0 1px 2px rgba(22, 24, 29, 0.05), 0 8px 24px rgba(22, 24, 29, 0.07);
+  --sans: "Inter", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+.slidev-layout {
+  background: var(--hintergrund);
+  color: var(--text);
+  font-family: var(--sans);
+  padding: 3.2rem 4rem;
+}
+
+.slidev-layout h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+}
+
+.slidev-layout h1 + p {
+  opacity: 1;
+}
+
+.slidev-layout code,
+.slidev-layout pre {
+  font-family: var(--mono);
+}
+
+/* Kleine Überschrift über dem Titel */
+.kicker {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.leise {
+  color: var(--text-leise);
+}
+
+.akzent {
+  color: var(--orange);
+}
+
+.akzent-blau {
+  color: var(--blau);
+}
+
+/* ---------- Bausteine, die viele Folien verwenden ---------- */
+
+/* Weiße Karte mit leichtem Schatten */
+.karte {
+  background: var(--flaeche);
+  border: 1px solid var(--linie);
+  border-radius: 16px;
+  box-shadow: var(--schatten);
+}
+
+/* Ein Zeichen in einem Kästchen */
+.zk {
+  display: inline-grid;
+  place-items: center;
+  min-width: 2.2rem;
+  height: 2.2rem;
+  padding: 0 0.3rem;
+  border-radius: 8px;
+  background: var(--flaeche-hell);
+  border: 1px solid var(--linie);
+  font-family: var(--mono);
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+/* Kleine Überschrift über einem Bereich */
+.beschriftung {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-sehr-leise);
+}
+
+/* Großer Merksatz */
+.slidev-layout .merksatz {
+  font-size: 1.7rem;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Inhalte, die per Klick erscheinen, gleiten sanft herein */
+.slidev-vclick-target {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slidev-vclick-hidden {
+  transform: translateY(10px);
+}
+
+/* Zwischenfolie vor jedem Schritt */
+.abschnitt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.abschnitt h1 {
+  font-size: 3.4rem;
+  text-align: center;
+}
+
+.abschnitt .kicker {
+  text-align: center;
+}
+
+/* Video über die ganze Folie */
+.video-folie {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--hintergrund);
+}
+
+/* Karten der Zusammenfassung */
+.raster-karten {
+  display: grid;
+  gap: 1.1rem;
+  margin-top: 1.6rem;
+}
+
+.raster-karten .karte {
+  padding: 1.1rem 1.3rem;
+}
+
+.raster-karten .nr {
+  font-family: var(--mono);
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.raster-karten h3 {
+  margin: 0.3rem 0 0.4rem;
+  font-size: 1.25rem;
+  font-weight: 650;
+}
+
+.raster-karten p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: var(--text-leise);
+}
